@@ -26,10 +26,10 @@ function initTabNav() {
 initTabNav()
 
 function initAccordion() {
+  
+  const accordionList = document.querySelectorAll('.js-accordion dt');
+  if(accordionList.length) {
 
-  if(activeAccordion.length) {
-
-    const accordionList = document.querySelectorAll('.js-accordion dt');
     accordionList[0].classList.add(activeClass)
     accordionList[0].nextElementSibling.classList.add(activeClass)
     function activeAccordion() {
@@ -51,7 +51,7 @@ function initScrtrollSuave() {
   
   function scrollToSection(event) {
     event.preventDefault();
-    const href = event.currentTarget.getAttribut('href');
+    const href = event.currentTarget.getAttribute('href');
     const section = document.querySelector(href);
   section.scrollIntoView({
    behavior: 'smooth',
