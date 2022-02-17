@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .modal-container.ativo {
   display: flex;
 }
@@ -18,21 +19,19 @@
   background: white;
   min-width: 300px;
   padding: 40px;
-  border: 10px solid #fb5;
-  background-origin: 0 0 0 10px white;
+  border: 10px solid #FB5;
+  box-shadow: 0 0 0 10px white;
   position: relative;
 }
 
 @keyframes modal {
   from {
     opacity: 0;
-    transform: translate3d(0, 30px, 0);
-    
+    transform: translate3d(0, -30px, 0);
   }
   to {
-    opacity: 0;
+    opacity: 1;
     transform: translate3d(0, 0, 0);
-
   }
 }
 
@@ -48,7 +47,7 @@
   top: -30px;
   right: -30px;
   position: absolute;
-  background: #e54;
+  background: #E54;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
   font-size: 1.2rem;
   color: white;
@@ -58,9 +57,9 @@
 
 .modal label {
   font-family: 'IBM Plex Mono', monospace;
-display: block;
-font-weight: bold;
-margin: 1rem 0 .5rem 0;
+  display: block;
+  font-weight: bold;
+  margin: 1rem 0 .5rem 0;
 }
 
 .modal input {
@@ -71,7 +70,7 @@ margin: 1rem 0 .5rem 0;
 
 .modal button[type="submit"] {
   display: block;
-  background: #e54;
+  background: #E54;
   border: none;
   border-radius: 4px;
   padding: .7rem 2rem;
